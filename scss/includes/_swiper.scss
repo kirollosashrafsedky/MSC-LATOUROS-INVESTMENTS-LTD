@@ -1,0 +1,99 @@
+.modal .swiper-container {
+    position: relative;
+    .swiper-container {
+        width: calc(100% - 130px);
+        margin: auto;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        margin-top: 0;
+        transform: translateY(-50%);
+        border: 2px solid $primaryColor;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+        &::after {
+            content: "";
+            display: none;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    .swiper-button-next {
+        transform: translateY(-50%) rotate(180deg);
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+}
+
+.modal .swiper-container {
+    border-radius: 20px;
+    .swiper-button-prev,
+    .swiper-button-next {
+        border: 2px solid #000;
+        background-image: url("../imgs/svg/arrow-left.svg");
+    }
+    .swiper-button-next {
+        right: 5px;
+    }
+    .swiper-button-prev {
+        left: 5px;
+    }
+}
+
+@media (max-width: 575.5px) {
+    .modal .swiper-container {
+        .swiper-container {
+            width: calc(100% - 80px);
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+// .mobile-company-swiper {
+//     .swiper-slide {
+//         background-position: center;
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         height: 250px;
+//         width: 100%;
+//     }
+//     .swiper-pagination {
+//         position: relative;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         margin: 15px 0 0 0;
+//         .swiper-pagination-bullet {
+//             width: 40px;
+//             height: 2px;
+//             border-radius: 10px;
+//             margin: 0 3px;
+//             &.swiper-pagination-bullet-active {
+//                 background-color: $primaryColor;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 400px) {
+//     .mobile-company-swiper {
+//         .swiper-slide {
+//             height: 200px;
+//         }
+//         .swiper-pagination {
+//             .swiper-pagination-bullet {
+//                 width: 35px;
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,83 @@
+.modal {
+    &.fade {
+        .modal-dialog {
+            transition: -webkit-transform 0.15s ease-out;
+            transition: transform 0.15s ease-out;
+            transition: transform 0.15s ease-out,
+                -webkit-transform 0.15s ease-out;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+        }
+    }
+    &.show {
+        .modal-dialog {
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    .modal-content {
+        border-radius: 20px;
+    }
+    .close {
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+        transform: translate(-20%, 20%);
+        opacity: 1;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        img {
+            width: 25px;
+        }
+        &:not(:disabled):not(.disabled):focus,
+        &:not(:disabled):not(.disabled):hover {
+            opacity: 1;
+            // background-color: #555555;
+            outline: none;
+        }
+    }
+}
+
+.modal-dialog {
+    margin: 0 1.5rem;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        margin: 1.75rem auto;
+    }
+}
+
+[data-target="#images-modal"] {
+    cursor: pointer;
+}
+
+#success-modal,
+#failure-modal,
+#cookies-modal {
+    .state-icon {
+        width: 90px;
+    }
+    h4 {
+        max-width: 300px;
+    }
+    p {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    #success-modal,
+    #failure-modal,
+    #cookies-modal {
+        .btn {
+            font-size: 10px;
+            white-space: nowrap;
+        }
+    }
+}

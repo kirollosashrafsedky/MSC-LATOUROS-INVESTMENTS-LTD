@@ -1,0 +1,99 @@
+.custom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    grid-template-areas:
+        "textarea none"
+        "textarea img3"
+        "img1 img3"
+        "img2 img3";
+    &.custom-grid-reverse {
+        grid-template-areas:
+            "none textarea"
+            "img3 textarea"
+            "img3 img1"
+            "img3 img2";
+    }
+    .img-wrapper {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        min-height: 150px;
+    }
+    p {
+        font-size: 15px;
+        a {
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+            img {
+                transition: $defaultTransition;
+                width: 15px;
+            }
+        }
+    }
+    .grid-item {
+        &:nth-of-type(1) {
+            grid-area: textarea;
+        }
+        &:nth-of-type(2) {
+            grid-area: img1;
+        }
+        &:nth-of-type(3) {
+            grid-area: img2;
+        }
+        &:nth-of-type(4) {
+            grid-area: img3;
+        }
+    }
+}
+
+@media (max-width: 991.5px) {
+    .custom-grid {
+        grid-template-areas:
+            "textarea img3"
+            "textarea img3"
+            "img1 img3"
+            "img2 img3";
+        &.custom-grid-reverse {
+            grid-template-areas:
+                "img3 textarea"
+                "img3 textarea"
+                "img3 img1"
+                "img3 img2";
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 575.5px) {
+    .custom-grid {
+        grid-template-areas:
+            "textarea textarea"
+            "img1 img3"
+            "img2 img3";
+        &.custom-grid-reverse {
+            grid-template-areas:
+                "textarea textarea"
+                "img3 img1"
+                "img3 img2";
+        }
+        p {
+            font-size: 12px;
+            a {
+                img {
+                    width: 12px;
+                }
+            }
+        }
+        .img-wrapper {
+            min-height: 100px;
+        }
+    }
+}

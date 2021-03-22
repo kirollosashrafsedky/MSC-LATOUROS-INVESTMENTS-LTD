@@ -1,0 +1,56 @@
+.error-page {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 1) 30%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url("../imgs/jpg/error-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    position: relative;
+    overflow: hidden;
+    #app {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    p {
+        max-width: 400px;
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .error-img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 991.5px) {
+    .error-page {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 1) 35%,
+                rgba(255, 255, 255, 0.3) 100%
+            ),
+            url("../imgs/jpg/error-bg.jpg");
+        .btn {
+            font-size: 10px;
+        }
+        .error-img {
+            width: 70%;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 14px;
+            max-width: 400px;
+        }
+    }
+}
