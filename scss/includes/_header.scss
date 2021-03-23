@@ -72,10 +72,14 @@ header {
         }
     }
 }
-
+@media (max-width: 767.5px) {
+    header {
+        min-height: 600px;
+    }
+}
 @media (max-width: 575.5px) {
     header {
-        min-height: 500px;
+        min-height: 550px;
         .logo-header {
             width: 95%;
             flex-shrink: 0;
@@ -87,5 +91,11 @@ header {
                 font-size: 12px;
             }
         }
+    }
+}
+
+@media (max-width: 450.5px) {
+    header {
+        min-height: 450px;
     }
 }
