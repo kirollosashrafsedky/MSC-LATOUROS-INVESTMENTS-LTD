@@ -1,14 +1,15 @@
 header {
     position: relative;
-    background-image: linear-gradient(
+    background: linear-gradient(
             to bottom,
+            rgba(255, 255, 255, 1) 0%,
             rgba(255, 255, 255, 1) 20%,
             rgba(255, 255, 255, 0) 100%
         ),
-        url("../imgs/jpg/header-bg.jpg");
-    max-height: 700px;
-    min-height: 600px;
-    background-position: center;
+        url("../imgs/jpg/header-bg.jpg") no-repeat left -1%;
+    max-height: 800px;
+    min-height: 650px;
+    background-position: 50% -5%;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -21,31 +22,47 @@ header {
         margin: auto;
     }
     .logo-header {
-        width: 70%;
+        width: 100%;
     }
     .logo-text-wrapper {
-        width: 65%;
+        width: 85%;
         padding-bottom: 15px;
         img {
             width: 100%;
         }
         border-bottom: 2px solid #000;
+        & + p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1199.5px) {
+    header {
+        .logo-text-wrapper {
+            & + p {
+                font-size: 18px;
+            }
+        }
     }
 }
 
 @media (max-width: 991.5px) {
     header {
-        background-image: linear-gradient(
+        background: linear-gradient(
                 to bottom,
+                rgba(255, 255, 255, 1) 0%,
                 rgba(255, 255, 255, 1) 40%,
                 rgba(255, 255, 255, 0.3) 100%
             ),
-            url("../imgs/jpg/header-bg.jpg");
-
+            url("../imgs/jpg/header-bg.jpg") no-repeat left -1%;
+        .logo-header {
+            width: 90%;
+        }
         .logo-text-wrapper {
-            width: 70%;
+            width: 90%;
             & + p {
-                width: 70%;
+                width: 90%;
             }
         }
         & > .container {
@@ -57,13 +74,13 @@ header {
 @media (max-width: 575.5px) {
     header {
         .logo-header {
-            width: 90%;
+            width: 95%;
             flex-shrink: 0;
         }
         .logo-text-wrapper {
-            width: 90%;
+            width: 95%;
             & + p {
-                width: 90%;
+                width: 95%;
             }
         }
     }

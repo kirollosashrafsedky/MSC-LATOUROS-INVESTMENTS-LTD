@@ -3,13 +3,20 @@
     textarea {
         width: 100%;
         color: #000;
+        font-family: "Michroma", sans-serif;
         &::-webkit-input-placeholder {
+            font-family: "Michroma", sans-serif;
+
             color: #000;
         }
         &::-ms-input-placeholder {
+            font-family: "Michroma", sans-serif;
+
             color: #000;
         }
         &::placeholder {
+            font-family: "Michroma", sans-serif;
+
             color: #000;
         }
         background-color: transparent;
@@ -20,6 +27,8 @@
         font-size: 1rem;
         outline: 0;
         &:focus {
+            font-family: "Michroma", sans-serif;
+
             outline: 0;
             border: 0;
             border-bottom: 2px solid #000;
@@ -42,4 +51,24 @@
 
 #contact-alert-container {
     display: none;
+}
+#contact-us {
+    h5 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 991.5px) {
+    #contact-us {
+        h5 {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 575.5px) {
+    #contact-us {
+        h5 {
+            font-size: 18px;
+        }
+    }
 }

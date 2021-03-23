@@ -162,14 +162,14 @@ section {
 
 #quote {
     position: relative;
-    border-top: 2px ​solid #fff;
-    background-image: linear-gradient(
+    background: linear-gradient(
             to bottom,
+            rgba(255, 255, 255, 1) 0%,
             rgba(255, 255, 255, 1) 30%,
             rgba(255, 255, 255, 0) 100%
         ),
-        url("../imgs/jpg/header-bg.jpg");
-    background-position: center;
+        url("../imgs/jpg/qoute-bg.jpg") no-repeat left -1%;
+    background-position: 50% -5px;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 600px;
@@ -185,12 +185,13 @@ section {
 
 @media (max-width: 991.5px) {
     #quote {
-        background-image: linear-gradient(
+        background: linear-gradient(
                 to bottom,
+                rgba(255, 255, 255, 1) 0%,
                 rgba(255, 255, 255, 1) 40%,
                 rgba(255, 255, 255, 0.3) 100%
             ),
-            url("../imgs/jpg/header-bg.jpg");
+            url("../imgs/jpg/header-bg.jpg") no-repeat left -1%;
     }
 }
 

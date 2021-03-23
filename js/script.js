@@ -10,11 +10,8 @@ $(document).ready(function() {
     //     });
     // },200);
 
-    let firstTime = true; // indicates if the user visits the website for the first time from the cookies . if first time => true else => false
     setTimeout(function(){
-        $('.splash-screen').fadeOut("slow", function(){
-            if(firstTime) $('#cookies-modal').modal('show') // shows the cookies modal only for the first visit
-        });
+        $('.splash-screen').fadeOut("slow");
       },100)
 
     let menuState = "hidden";
