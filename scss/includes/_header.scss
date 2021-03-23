@@ -75,6 +75,7 @@ header {
 
 @media (max-width: 575.5px) {
     header {
+        min-height: 500px;
         .logo-header {
             width: 95%;
             flex-shrink: 0;
