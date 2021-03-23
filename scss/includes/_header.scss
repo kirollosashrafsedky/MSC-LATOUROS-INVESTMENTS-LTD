@@ -8,7 +8,6 @@ header {
         ),
         url("../imgs/jpg/header-bg.jpg") no-repeat center;
     // max-height: 800px;
-    min-height: 700px;
     background-size: cover;
     width: 100%;
     // height: 85vh;
@@ -56,6 +55,7 @@ header {
             ),
             url("../imgs/jpg/header-bg.jpg") no-repeat center;
         background-size: cover;
+        min-height: 700px;
 
         .logo-header {
             width: 90%;
