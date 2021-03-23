@@ -169,7 +169,6 @@ section {
         ),
         url("../imgs/jpg/qoute-bg.jpg") no-repeat left bottom;
     background-size: cover;
-    background-repeat: no-repeat;
     min-height: 600px;
     blockquote {
         max-width: 800px;
@@ -189,7 +188,8 @@ section {
                 rgba(255, 255, 255, 1) 5%,
                 rgba(255, 255, 255, 0.3) 100%
             ),
-            url("../imgs/jpg/header-bg.jpg") no-repeat left bottom;
+            url("../imgs/jpg/qoute-bg.jpg") no-repeat left bottom;
+        background-size: cover;
     }
 }
 
