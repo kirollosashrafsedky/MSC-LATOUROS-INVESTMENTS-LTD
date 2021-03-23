@@ -81,6 +81,8 @@ $(document).ready(function() {
             }else{
                 url = $(this).css('background-image').replace('url(','').replace(')','').replace(/\"/gi, "");
             }
+                        // let url = $(this).css('background-image').replace('url(','').replace(')','').replace(/\"/gi, "").replace('thumbnails','main');
+
             let slide = `<div class="swiper-slide">
                             <img src="${url}" class="img-fluid w-100">
                         </div>`;
