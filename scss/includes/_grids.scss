@@ -27,16 +27,15 @@
     }
     p {
         font-size: 16px;
-        a {
-            &:hover {
-                img {
-                    transform: scale(1.2);
-                }
-            }
-            img {
-                transition: $defaultTransition;
-                width: 15px;
-            }
+    }
+    .external-link {
+        border-top: 1px solid #43a2da;
+        color: #43a2da;
+        font-size: 16px;
+        display: inline-block;
+        padding-top: 3px;
+        img {
+            width: 16px;
         }
     }
     .grid-item {
@@ -95,10 +94,11 @@
         }
         p {
             font-size: 12px;
-            a {
-                img {
-                    width: 12px;
-                }
+        }
+        .external-link {
+            font-size: 14px;
+            img {
+                width: 14px;
             }
         }
         .img-wrapper {
